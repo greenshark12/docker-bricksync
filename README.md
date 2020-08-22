@@ -76,13 +76,17 @@ $ docker create \
  ``` 
  b-start
  ```
- - To attach to the GNU Screens session:
+ - Attach to the GNU Screens session:
  ```
  brick
  ```
- - To detach from the GNU Screens session:
+ - Detach from the GNU Screens session:
  ```
  Ctrl+a followed by d
+```
+ - Exit container shell:
+ ```
+ exit
 ```
 
 ## Update the container
