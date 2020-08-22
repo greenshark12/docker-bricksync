@@ -1,0 +1,9 @@
+# docker-bricksync shortcuts
+
+alias bsrun='docker run --name=brick -itd -e PUID=1000 -e PGID=999 -e TZ=America/New_York -v /srv/bricksync:/bricksync --restart unless-stopped greenshark12/bricksync'
+alias bsstop='docker stop brick'
+alias bsstop='docker start brick'
+alias bsrm='docker rm brick'
+alias bsbuild='docker build . -t greenshark12/bricksync'
+alias bsexec='docker exec -it brick bash'
+alias bspush='docker push greenshark12/bricksync'
