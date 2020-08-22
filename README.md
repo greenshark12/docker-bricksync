@@ -66,16 +66,6 @@ $ docker create \
   - Start the container: ```docker start brick```
   - Shell access whilst the container is running: ```docker exec -it brick bash ```
 
-## Update the container
-To update the container, you need to recreate the container. It is not recommended updating the apps inside the container. 
-
-  - Update the image: ``` docker pull greenshark12/bricksync ```
-  - Stop the container: ``` docker stop brick ```
-  - Delete the container: ``` docker rm brick ```
-  - Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your /bricksync folder and settings will be preserved)
-  - Start the new container: ``` docker start brick ```
-  - You can also remove the old dangling images: ``` docker image prune ```
-
 ## Start BrickSync using GNU Screens
 
  - Access the container shell: 
@@ -94,4 +84,16 @@ To update the container, you need to recreate the container. It is not recommend
  ```
  Ctrl+a followed by d
 ```
+
+## Update the container
+To update the container, you need to recreate the container. It is not recommended updating the apps inside the container. 
+
+  - Update the image: ``` docker pull greenshark12/bricksync ```
+  - Stop the container: ``` docker stop brick ```
+  - Delete the container: ``` docker rm brick ```
+  - Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your /bricksync folder and settings will be preserved)
+  - Start the new container: ``` docker start brick ```
+  - You can also remove the old dangling images: ``` docker image prune ```
+
+
 
