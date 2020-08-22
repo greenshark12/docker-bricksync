@@ -9,7 +9,7 @@ Issue with bricksync and debian and running the server from SSH:
 There is a a problem with the OpenSSL in debian when running BrickSync. 
 BrickSync requires an older version of OpenSSL (1.0.0) but all versions of Debian only support a newer one (1.0.1e) and can't be downgraded.
 
-Therefore BrickSync needs to be installed in an Ubuntu. 
+Therefore BrickSync needs to be installed in an Ubuntu system.
 
 To be able to keep BrickSync running even after the exiting the docker shell, the docker container needs GNU Screen.
 
@@ -74,11 +74,11 @@ $ docker create \
  ```
  - Start BrickSync with GNU Screens in detached mode: 
  ``` 
- cd /bricksync && screen -S scrb -d -m ./bricksync  
+ b-start
  ```
  - To attach to the GNU Screens session:
  ```
- screens -r root/
+ brick
  ```
  - To detach from the GNU Screens session:
  ```
